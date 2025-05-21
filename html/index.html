@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Premium - Voitures d'exception</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="dark-theme">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logobmw.png" alt="BMW Logo">
+                <h1>Bavaria Motion</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="#cars">Véhicules</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="login.html" id="login-btn">Connexion</a></li>
+                    <li><a href="#" id="cart-icon"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Rechercher un modèle..." id="search-input">
+                <button id="search-btn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <video autoplay muted loop playsinline class="bg-video">
+                    <source src="intro.mp4" type="video/mp4">
+                  </video>
+                <h1>Découvrez l'excellence BMW</h1>
+                <p>Des voitures conçues pour ceux qui aiment conduire</p>
+                <div class="hero-buttons">
+                    <a href="#cars" class="btn">Découvrir nos modèles</a>
+                    <a href="essai.html" class="btn btn-outline">Réserver un essai</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cars" class="cars">
+        <div class="container">
+            <h2>Nos véhicules d'exception</h2>
+            <div class="car-grid">
+                <div class="car-card">
+                    <img src="images/serie 3 sedan.jpg" alt="BMW Série 3">
+                    <div class="car-info">
+                        <h3>BMW Série 3</h3>
+                        <p class="price">45 000 €</p>
+                        <p> La berline sport à quatre portes qui a tout déclenché.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="serie3" data-name="BMW Série 3" data-price="45000">Ajouter au panier</button>
+                            <a href="essai.html?model=serie3" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/suv x5.jpg" alt="BMW X5">
+                    <div class="car-info">
+                        <h3>BMW X5</h3>
+                        <p class="price">75 000 €</p>
+                        <p>L'original qui a inspiré tous les X à suivre.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="x5" data-name="BMW X5" data-price="75000">Ajouter au panier</button>
+                            <a href="essai.html?model=x5" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/i8.jpg" alt="BMW i8">
+                    <div class="car-info">
+                        <h3>BMW i8</h3>
+                        <p class="price">140 000 €</p>
+                        <p>La supercar hybride à l'allure futuriste et aux performances exceptionnelles.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="i8" data-name="BMW i8" data-price="140000">Ajouter au panier</button>
+                            <a href="essai.html?model=i8" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/m4 coupe.jpg" alt="BMW M4">
+                    <div class="car-info">
+                        <h3>BMW M4</h3>
+                        <p class="price">90 000 €</p>
+                        <p>: La puissance incarnée dans une carrosserie de coupé sport.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="m4" data-name="BMW M4" data-price="90000">Ajouter au panier</button>
+                            <a href="essai.html?model=m4" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/suv x1.jpg" alt="BMW SUV X1">
+                    <div class="car-info">
+                        <h3>BMW SUV X1</h3>
+                        <p class="price">45 000 €</p>
+                        <p>Le SUV quatre portes compact, mais intrépide.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="x1" data-name="BMW SUV X1" data-price="45000">Ajouter au panier</button>
+                            <a href="essai.html?model=x1" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/suv x2 coupe.jpg" alt="BMW SUV X2 Coupé">
+                    <div class="car-info">
+                        <h3>BMW SUV X2 Coupé</h3>
+                        <p class="price">50 000 €</p>
+                        <p>Le membre le plus rebelle de la famille X.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="x2 Coupé" data-name="BMW SUV X2 Coupé" data-price="50000">Ajouter au panier</button>
+                            <a href="essai.html?model=x2 coupé" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/suv x3.jpg" alt="BMW SUV X3">
+                    <div class="car-info">
+                        <h3>BMW SUV X3</h3>
+                        <p class="price">55 000 €</p>
+                        <p>Un SUV engageant né pour l'aventure.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="x3" data-name="BMW SUV X3" data-price="55000">Ajouter au panier</button>
+                            <a href="essai.html?model=x3" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/suv x4 coupe.jpg" alt="BMW SUV X4 Coupé">
+                    <div class="car-info">
+                        <h3>BMW SUV X4 Coupé</h3>
+                        <p class="price">60 000 €</p>
+                        <p>L'aventurier inspiré du coupé de la famille X.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="x4 Coupé" data-name="BMW SUV X4 Coupé" data-price="60000">Ajouter au panier</button>
+                            <a href="essai.html?model=x4 coupé" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/suv x4 m coupe.jpg" alt="BMW X4 M Coupé">
+                    <div class="car-info">
+                        <h3>BMW SUV X4 M Coupé</h3>
+                        <p class="price">64 000 €</p>
+                        <p>Découvrez la puissance palpitante du M dans la carrosserie d'un SUV coupé.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="x4 m Coupé" data-name="BMW SUV X4 M Coupé" data-price="64000">Ajouter au panier</button>
+                            <a href="essai.html?model=x4 m coupé" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/suv x5 m competition.jpg" alt="BMW SUV X5 M Competition">
+                    <div class="car-info">
+                        <h3>BMW SUV X5 M Competition</h3>
+                        <p class="price">68 000 €</p>
+                        <p>Le SUV dominant doté des performances du M.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="x5 m Competition" data-name="BMW SUV X5 M Competition" data-price="68000">Ajouter au panier</button>
+                            <a href="essai.html?model=x5 m competition" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/suv x6 coupe.jpg" alt="BMW SUV X6 Coupé">
+                    <div class="car-info">
+                        <h3>BMW SUV X6 Coupé</h3>
+                        <p class="price">80 000 €</p>
+                        <p> L'offre coupé raffinée et réinventée d'un classique.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="x6 Coupé" data-name="BMW SUV X6 Coupé" data-price="80000">Ajouter au panier</button>
+                            <a href="essai.html?model=x6 coupé" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/suv x6 m competition.jpg" alt="BMW SUV X6 M Competition">
+                    <div class="car-info">
+                        <h3>BMW SUV X6 M Competition</h3>
+                        <p class="price">85 000 €</p>
+                        <p>  Une puissance écrasante, un design sans concession.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="x6 M Competition" data-name="BMW SUV X6 M Competition" data-price="85000">Ajouter au panier</button>
+                            <a href="essai.html?model=x6 m competition" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/suv x7.jpg" alt="BMW SUV X7">
+                    <div class="car-info">
+                        <h3>BMW SUV X7</h3>
+                        <p class="price">80 000 €</p>
+                        <p> La BMW la plus grande et la plus luxueuse jamais construite.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="x7" data-name="BMW SUV X7" data-price="80000">Ajouter au panier</button>
+                            <a href="essai.html?model=x7" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/suv xm.jpg" alt="BMW SUV XM">
+                    <div class="car-info">
+                        <h3>BMW SUV XM</h3>
+                        <p class="price"> 100 000€</p>
+                        <p>  Le SUV le plus puissant de la gamme, avec une ingénierie signée BMW M et un intérieur de luxe raffiné.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="xm" data-name="BMW SUV XM" data-price="100000">Ajouter au panier</button>
+                            <a href="essai.html?model=xm" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/suv ix.jpg" alt="BMW SUV IX">
+                    <div class="car-info">
+                        <h3>BMW SUV IX</h3>
+                        <p class="price">120 000 €</p>
+                        <p> Un SUV entièrement électrique offrant la nouvelle norme en matière d'aérodynamisme, de technologie et de luxe.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="ix" data-name="BMW SUV IX" data-price="120000">Ajouter au panier</button>
+                            <a href="essai.html?model=ix" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/serie 2 gran coupe.jpg" alt="BMW Serie 2 Gran Coupé">
+                    <div class="car-info">
+                        <h3>BMW Serie 2 Gran Coupé</h3>
+                        <p class="price">65 000 €</p>
+                        <p> Une voiture extravertie à quatre portes avec des performances dynamiques.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="serie 2 gran coupé" data-name="BMW Serie 2 Gran Coupé" data-price="65000">Ajouter au panier</button>
+                            <a href="essai.html?model=serie 2 gran coupé" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/serie 4 gran coupe.jpg" alt="BMW Serie 4 Gran Coupé">
+                    <div class="car-info">
+                        <h3>BMW Serie 4 Gran Coupé</h3>
+                        <p class="price">75 000 €</p>
+                        <p> Équilibre et beauté dans un modèle à quatre portes – avec de la puissance à revendre.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="serie 4 gran coupé" data-name="BMW Serie 4 Gran Coupé " data-price="75000">Ajouter au panier</button>
+                            <a href="essai.html?model=serie 4 gran coupé" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/serie 5 sedan.jpg" alt="BMW Serie 5 Sedan">
+                    <div class="car-info">
+                        <h3>BMW Serie 5 Sedan</h3>
+                        <p class="price">78 000 €</p>
+                        <p> La berline quatre portes où le sport et le luxe se rencontrent.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="serie 5 sedan" data-name="BMW Serie 5 Sedan" data-price="78000">Ajouter au panier</button>
+                            <a href="essai.html?model=serie 5 sedan" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/serie 7 sedan.jpg" alt="BMW Serie 7 Sedan">
+                    <div class="car-info">
+                        <h3>BMW Serie 7 Sedan</h3>
+                        <p class="price">89 000 €</p>
+                        <p> Le véhicule phare de la flotte ultime.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="serie 7 sedan" data-name="BMW Serie 7 Sedan" data-price="89000">Ajouter au panier</button>
+                            <a href="essai.html?model=serie 7 sedan" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/serie 8 gran coupe.jpg" alt="BMW Serie 8 Gran Coupé">
+                    <div class="car-info">
+                        <h3>BMW Serie 8 Gran Coupé</h3>
+                        <p class="price">95 000 €</p>
+                        <p>  Conçu pour être à la hauteur de son héritage de performance.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="serie 8 gran coupé" data-name="BMW Serie 8 Gran Coupé" data-price="95000">Ajouter au panier</button>
+                            <a href="essai.html?model=serie 8 gran coupé" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/m3.jpg" alt="BMW M3">
+                    <div class="car-info">
+                        <h3>BMW M3</h3>
+                        <p class="price">74 000 €</p>
+                        <p>La véritable voiture de sport haute performance.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="m3" data-name="BMW M3" data-price="74000">Ajouter au panier</button>
+                            <a href="essai.html?model=m3" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/m5 sedan.jpg" alt="BMW M5 Sedan">
+                    <div class="car-info">
+                        <h3>BMW M5 Sedan</h3>
+                        <p class="price">82 000 €</p>
+                        <p>  La berline M-tuned ultime, une voiture performante par excellence sur route et sur piste.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="m5 sedan" data-name="BMW M5 Sedan" data-price="82000">Ajouter au panier</button>
+                            <a href="essai.html?model=m5 sedan" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/m8 competition gran coupe.jpg" alt="BMW M8 Competition Gran Coupé">
+                    <div class="car-info">
+                        <h3>BMW M8 Competition Gran Coupé</h3>
+                        <p class="price">90 000 €</p>
+                        <p>La définition haute adrénaline de la performance et du prestige M.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="m8 competition gran coupé" data-name="BMW M8 Competition Gran Coupé" data-price="90000">Ajouter au panier</button>
+                            <a href="essai.html?model=m8 competition gran coupé" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/i4 gran coupe.jpg" alt="BMW I4 Gran Coupé">
+                    <div class="car-info">
+                        <h3>BMW I4 Gran Coupé</h3>
+                        <p class="price">75 000 €</p>
+                        <p>Une voiture de sport énergique et entièrement électrique conçue pour le confort et la performance.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="i4 gran coupé" data-name="BMW I4 Gran Coupé" data-price="75000">Ajouter au panier</button>
+                            <a href="essai.html?model=i4 gran coupé" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/i5 sedan.jpg" alt="BMW I5 Sedan">
+                    <div class="car-info">
+                        <h3>BMW I5 Sedan</h3>
+                        <p class="price">80 000 €</p>
+                        <p>La nouvelle berline entièrement électrique établit la norme en matière de performance, de luxe et de technologie.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="i5 sedan" data-name="BMW I5 Sedan" data-price="80000">Ajouter au panier</button>
+                            <a href="essai.html?model=i5 sedan" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/i7 electric luxury sedan.jpg" alt="BMW I7 Electric Luxury Sedan">
+                    <div class="car-info">
+                        <h3>BMW I7 Electric Luxury Sedan</h3>
+                        <p class="price">120 000 €</p>
+                        <p>Une berline de luxe exécutive entièrement électrique offrant la nouvelle norme en matière de technologie, de luxe et de design.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="i7 electric luxury sedan" data-name="BMW I7 Electric Luxury Sedan" data-price="120000">Ajouter au panier</button>
+                            <a href="essai.html?model=i7 electric luxury sedan" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/cabriolet serie 4.jpg" alt="BMW Cabriolet Serie 4">
+                    <div class="car-info">
+                        <h3>BMW Cabriolet Serie 4</h3>
+                        <p class="price">50 000 €</p>
+                        <p>Une voiture agressive à deux portes avec un toit rétractable à quatre panneaux.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id=" cabriolet serie 4" data-name="BMW Cabriolet Serie 4" data-price="50000">Ajouter au panier</button>
+                            <a href="essai.html?model=cabriolet serie 4" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/cabriolet serie 8.jpg" alt="BMW Cabriolet Serie 8">
+                    <div class="car-info">
+                        <h3>BMW Cabriolet Serie 8</h3>
+                        <p class="price">65 000 €</p>
+                        <p>Élégant et robuste : le cabriolet BMW par excellence.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="cabriolet serie 8" data-name="BMW Cabriolet Serie 8" data-price="65000">Ajouter au panier</button>
+                            <a href="essai.html?model=cabriolet serie 8" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/cabriolet m8 competition.jpg" alt="BMW Cabriolet M8 Competition">
+                    <div class="car-info">
+                        <h3>BMW Cabriolet M8 Competition</h3>
+                        <p class="price">78 000 €</p>
+                        <p> La liberté en plein air rencontre les performances sur route ouverte.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="cabriolet m8 competition" data-name="BMW CabrioletM8 Competition" data-price="78000">Ajouter au panier</button>
+                            <a href="essai.html?model=cabriolet m8 competition" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="car-card">
+                    <img src="images/z4 roadster.jpg" alt="BMW Z4 Roadster">
+                    <div class="car-info">
+                        <h3>BMW Z4 Roadster</h3>
+                        <p class="price">70 000 €</p>
+                        <p>L'héritage des roadsters classiques de BMW perdure et évolue.</p>
+                        <div class="car-actions">
+                            <button class="btn add-to-cart" data-id="z4 roadster" data-name="BMW Z4 Roadster" data-price="70000s">Ajouter au panier</button>
+                            <a href="essai.html?model=z4 roadster" class="btn btn-outline">Essayer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services-preview">
+        <div class="container">
+            <h2>Nos services après-vente</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-oil-can"></i>
+                    <h3>Vidange & Entretien</h3>
+                    <p>Service d'entretien régulier et vidange d'huile par des experts BMW.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>Remplacement de pièces</h3>
+                    <p>Pièces d'origine BMW et service de remplacement professionnel.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Diagnostic complet</h3>
+                    <p>Analyse complète de votre véhicule avec les dernières technologies.</p>
+                </div>
+            </div>
+            <div class="services-link">
+                <a href="services.html" class="btn btn-outline">Découvrir tous nos services</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> +33 1 23 45 67 89</p>
+                    <p><i class="fas fa-envelope"></i> contact@bavariamotion.fr</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Avenue des Champs-Élysées, Paris</p>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Nom" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Message" required></textarea>
+                        <button type="submit" class="btn">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logobmw.png" alt="BMW Logo" class="footer-logo-img">
+                    <p>Bavaria Motion</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="#cars">Véhicules</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="a-propos.html">À propos</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Informations</h4>
+                        <ul>
+                            <li><a href="legal.html">Mentions légales</a></li>
+                            <li><a href="privacy.html">Politique de confidentialité</a></li>
+                            <li><a href="#">Conditions générales</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bavaria Motion. Tous droits réservés.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Votre panier</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <p>Total: <span id="cart-total">0</span> €</p>
+                <span id="cart-count">0</span>
+                <button class="btn">Passer commande</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="register-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Inscription</h2>
+            <form id="register-form">
+                <div class="form-group">
+                    <label for="name">Nom</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date de naissance</label>
+                    <input type="date" id="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirmer le mot de passe</label>
+                    <input type="password" id="confirm-password" required>
+                </div>
+                <button type="submit" class="btn">S'inscrire</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script src="script.js"></script>
+</body>
+</html>
