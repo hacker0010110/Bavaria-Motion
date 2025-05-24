@@ -1,3 +1,8 @@
+# Noms et prénoms des membres du groupe :
+- Bouderka Yacine
+- Ould Youcef Malek
+- Moula Hacene
+- Raab Abdelhak
 
 # Site de Vente de voitures Bavaria Motion 
 
